@@ -11,14 +11,14 @@ var appData = {
   budget: money,
   timeData: time,
   expenses: {
-   cost: price
+   cost: price,
+   cost2: price2
   },
   optionalExpenses: {
-
   },
   income: [],
   savings: false
 }
 
-var sum = (appData.budget - appData.expenses["cost"])/30;
+var sum = appData.budget/30;
 alert(sum);
