@@ -22,26 +22,28 @@ for (var i = 0; i < 2; i++) {
     console.log("done");
     appData.expenses[cost] = price;
   }else {
+    i--;
     alert("Данные введены не верно");
   }
 };
 
 
 
-// var i = 0;
-// while (i < 2) {
-//   var cost = prompt("Введите обязательную статью расходов в этом месяце", "не больше 50-ти символов");
-//   var price = +prompt("Во сколько обойдеться?", "30");
+/* var i = 0;
+while (i < 2) {
+  var cost = prompt("Введите обязательную статью расходов в этом месяце", "не больше 50-ти символов");
+  var price = +prompt("Во сколько обойдеться?", "30");
 
-//   if (typeof(cost) === 'string' && cost != null && price != null
-//     && cost != '' && price != '' && cost.length < 50) {
-//     console.log("done");
-//     appData.expenses[cost] = price;
-//   }else {
-//     alert("Данные введены не верно");
-//   }
-//   i++;
-// }
+  if (typeof(cost) === 'string' && cost != null && price != null
+    && cost != '' && price != '' && cost.length < 50) {
+    console.log("done");
+    appData.expenses[cost] = price;
+  }else {
+    i--;
+    alert("Данные введены не верно");
+  }
+  i++;
+} */
 
 /* var i = 0 
 do {
@@ -53,6 +55,7 @@ do {
     console.log("done");
     appData.expenses[cost] = price;
   }else {
+    i--;
     alert("Данные введены не верно");
   }
   i++;
