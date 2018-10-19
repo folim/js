@@ -1,6 +1,6 @@
 'use strict';
 
-var money, time, noncost;
+var money, time, nonCost;
 
 function start() {
   money = +prompt("Вам бюджет за месяц ?", "300");
@@ -70,12 +70,12 @@ checkSavings();
 
 function chooseOptExpenses() {
   for (var i = 1; i < 4; i++) {
-    var noncost = prompt("Статья необязательных расходов?","");
+    var nonCost = prompt("Статья необязательных расходов?","");
 
-    if (typeof(noncost) === 'string' && noncost != null
-    && noncost != '' && noncost.length < 50){
+    if (typeof(nonCost) === 'string' && nonCost != null
+    && nonCost != '' && nonCost.length < 50){
     console.log("Статья необязательных расходов заполнена")
-    appData.optionalExpenses[i] = noncost;
+    appData.optionalExpenses[i] = nonCost;
     }
 
   } 
