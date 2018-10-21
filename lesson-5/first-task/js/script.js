@@ -7,7 +7,6 @@ let menu = document.querySelector(".menu"),
     proptText = document.querySelector("#prompt"),
     ans = prompt("Ваше отношение к технике Apple", "");
 
-
 menu.insertBefore(menuItem[2], menuItem[1]);
 newMenuLi.textContent = "Пятый пункт";
 newMenuLi.classList.add("menu-item");
