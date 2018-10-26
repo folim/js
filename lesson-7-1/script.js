@@ -8,15 +8,15 @@ setInterval(function() {
     hours = now.getHours();
     minutes = now.getMinutes();
     seconds = now.getSeconds();
+    hours = checkTime(hours);
+    minutes = checkTime(minutes);
+    seconds = checkTime(seconds);
 
-    if (hours < 10) {
-        hours = "0" + hours;
-    }
-    if (minutes < 10) {
-        minutes = "0" + minutes;
-    }
-    if (seconds < 10) {
-        seconds = "0" + seconds;
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i; 
+        }
+        return i;
     }
     timer.textContent = hours + ':' + minutes + ':' + seconds;
 },1000);
